@@ -24,11 +24,11 @@ public class WordReader implements IRichSpout{
     public boolean isDistributed() {return false;}
 
     /**
-     * Declare an output field "words"
+     * Declare an output field "line"
      */
     @Override
     public void declareOutputFields(OutputFieldsDeclarer declarer) {
-        declarer.declare(new Fields("words"));
+        declarer.declare(new Fields("line"));
     }
 
     @Override
