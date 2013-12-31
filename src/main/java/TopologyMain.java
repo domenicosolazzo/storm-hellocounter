@@ -28,7 +28,7 @@ public class TopologyMain {
         //Topology run
         conf.put(Config.TOPOLOGY_MAX_SPOUT_PENDING, 1);
         LocalCluster cluster = new LocalCluster();
-        cluster.submitTopology("Getting-Started-Toplogie", conf,
+        cluster.submitTopology("hello-counter", conf,
                 builder.createTopology());
         Thread.sleep(1000);
         cluster.shutdown();
